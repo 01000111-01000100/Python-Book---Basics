@@ -1,0 +1,6 @@
+money = float(input())
+currency_1 = input()
+currency_2 = input()
+this_dict = dict(BGN=1, USD=1.79549, EUR=1.95583, GBP=2.53405)
+result = money * (this_dict[currency_1] / this_dict[currency_2])
+print(f'{result:.2f} {currency_2}')
